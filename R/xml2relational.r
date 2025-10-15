@@ -94,7 +94,7 @@ serial.df <- function(l, elem.df, df.name, record, prefix.primary, prefix.foreig
 
 
 serial.xml <- function(obj) {
-  serial <- c()
+  serial <- pairlist()
   chdr <- xml2::xml_children(obj)
   if(length(chdr) > 0) {
     for(i in 1:length(chdr)) {
